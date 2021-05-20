@@ -1,5 +1,6 @@
 library(dplyr)
 library(mgsub)
+library(xlsx)
 source("R/youtube live gemiddelde.R")
 source("R/youtube.R")
 source("R/itunes.R")
@@ -17,3 +18,4 @@ print(summary(model))
 #                            YouTube = nrow(nieuwe_data) - rank(nieuwe_data$Youtube, ties.method = "max"),
 #                            iTunes = nrow(nieuwe_data) - rank(nieuwe_data$iTunes, ties.method = "max"),
 #                            Punten = predict(model, nieuwe_data))
+# write.xlsx(voorspelling, file = "Output/voorspelling.xlsx")
