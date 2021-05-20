@@ -3,7 +3,7 @@ bereken_live_gemiddelden <- function() {
                             Streams = numeric(),
                             Halve_finale = numeric(),
                             Live = factor())
-  for(year in 2018 : 2019) {
+  for(year in c("2018", "2019", "2021")) {
     youtube <- read.csv(paste0("Data/youtube ", year, ".csv"))
     youtube_all <- rbind(youtube_all, youtube)
   }
