@@ -12,7 +12,7 @@ gemiddelden_live <- bereken_live_gemiddelden()
 model <- train_model(gemiddelden_live)
 print(summary(model))
 
-# nieuwe_data <- combineer_data("2021", 1)
+# nieuwe_data <- combineer_data("2021", gemiddelden_live, 1)
 # voorspelling <- data.frame(Land = nieuwe_data$Land,
 #                            Bookmakers = rank(nieuwe_data$Bookmakers, ties.method = "min"),
 #                            YouTube = nrow(nieuwe_data) - rank(nieuwe_data$Youtube, ties.method = "max"),
